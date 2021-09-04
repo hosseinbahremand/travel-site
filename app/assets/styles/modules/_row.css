@@ -1,0 +1,28 @@
+.row {
+  &--gutter {
+    margin-right: -65px;
+  }
+  &--gutter > div {
+    padding-right: 65px;
+  }
+
+  &__b-margin-until-medium {
+    margin-bottom: 1rem;
+  }
+
+  @mixin atMedium {
+    &__b-margin-until-medium {
+      margin-bottom: 0;
+    }
+
+    display: flex;
+
+    &__medium-4 {
+      width: 33.33%;
+    }
+
+    &__medium-8 {
+      width: 66.66%;
+    }
+  }
+}
