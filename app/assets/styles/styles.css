@@ -5,9 +5,11 @@
 @import "components/wrapper.css";
 @import "components/page-section";
 @import "components/headline";
+@import "components/_section-title.css";
 @import "modules/_large-hero.css";
 @import "modules/_row.css";
 @import "modules/_text-container.css";
+@import "modules/_feature-item.css";
 
 body {
   font-family: "Roboto", sans-serif;

@@ -9,4 +9,11 @@
     background-color: $mainBlue;
     color: white;
   }
+
+  &--centered {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
 }
