@@ -2,8 +2,14 @@
   &--gutter {
     margin-right: -65px;
   }
+  &--gutter-large {
+    margin-right: -100px;
+  }
   &--gutter > div {
     padding-right: 65px;
+  }
+  &--gutter-large > div {
+    padding-right: 100px;
   }
 
   &__b-margin-until-medium {
@@ -11,11 +17,11 @@
   }
 
   @mixin atMedium {
+    display: flex;
+
     &__b-margin-until-medium {
       margin-bottom: 0;
     }
-
-    display: flex;
 
     &__medium-4 {
       width: 33.33%;
@@ -23,6 +29,18 @@
 
     &__medium-8 {
       width: 66.66%;
+    }
+
+    &__medium-6 {
+      width: 50%;
+    }
+
+    &__medium-3 {
+      width: 25%;
+    }
+
+    &__medium-9 {
+      width: 75%;
     }
   }
 }
