@@ -16,4 +16,14 @@
     align-items: center;
     justify-content: center;
   }
+
+  &--testimonials {
+    background-color: #c3dae6;
+
+    @mixin atLarge {
+      background: url("../../assets/images/testimonials-bg.jpg") top center
+        no-repeat;
+      background-size: cover;
+    }
+  }
 }
