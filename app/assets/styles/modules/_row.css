@@ -25,6 +25,7 @@
   }
 
   @mixin atMedium {
+    display: flex;
     &__b-margin-until-medium {
       margin-bottom: 0;
     }
@@ -80,6 +81,14 @@
 
   &--equal-height-in-large {
     & > div {
+      display: flex;
+    }
+  }
+
+  &--no-flex-until-large {
+    display: inline-block;
+
+    @mixin atLarge {
       display: flex;
     }
   }
