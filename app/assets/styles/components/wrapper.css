@@ -10,6 +10,10 @@
     padding: 0 0;
   }
 
+  &--narrow {
+    max-width: 470px;
+  }
+
   &--medium {
     max-width: 976px;
   }
