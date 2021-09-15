@@ -7,12 +7,12 @@ exports.handler = function (event, context, callback) {
   let body;
 
   if (event.body) {
-    body = JSON.parse(event.body);
+    body = event.body;
   } else {
     body = {};
   }
 
-  if (body.password === "shabaliscoo") {
+  if (body.password == "shabaliscoo") {
     callback(null, {
       statusCode: 200,
       body: secretContent,
