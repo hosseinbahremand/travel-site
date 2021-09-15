@@ -4,13 +4,13 @@ exports.handler = function (event, context, callback) {
   <p>Here we can tell you that the sky is <strong>blue</strong>, and two plus two equals four.</p>
   `;
 
-  let body = { password: "shabaliscoo" };
+  let body;
 
-  //   if (event.body) {
-  //     body = "shabaliscoo";
-  //   } else {
-  //     body = {};
-  //   }
+  if (event.body) {
+    body = JSON.parse(event.body);
+  } else {
+    body = { password: "shabaliscoo" };
+  }
 
   if (body.password == "shabaliscoo") {
     callback(null, {
