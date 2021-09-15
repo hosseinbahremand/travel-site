@@ -15,7 +15,7 @@ exports.handler = function (event, context, callback) {
   if (body.password == "shabaliscoo") {
     callback(null, {
       statusCode: 200,
-      body: JSON.parse(event.body),
+      body: event.body,
     });
   } else {
     callback(null, {
