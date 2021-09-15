@@ -4,7 +4,8 @@ exports.handler = function (event, context, callback) {
   <p>Here we can tell you that the sky is <strong>blue</strong>, and two plus two equals four.</p>
   `;
 
-  let body = "shabaliscoo";
+  let body;
+  body.password = "shabaliscoo";
 
   if (event.body) {
     body = "shabaliscoo";
