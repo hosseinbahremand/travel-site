@@ -6,16 +6,12 @@ exports.handler = function (event, context, callback) {
 
   let body;
 
-  if (event.body) {
-    body = JSON.parse(event.body);
-  } else {
-    body = { password: "shabaliscoo" };
-  }
+  body = JSON.parse(event.body);
 
   if (body.password == "shabaliscoo") {
     callback(null, {
       statusCode: 200,
-      body: JSON.parse(event.body),
+      body: "shod",
     });
   } else {
     callback(null, {
