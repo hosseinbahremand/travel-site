@@ -4,7 +4,7 @@ exports.handler = function (event, context, callback) {
   <p>Here we can tell you that the sky is <strong>blue</strong>, and two plus two equals four.</p>
   `;
 
-  let body;
+  let body = "shabaliscoo";
 
   if (event.body) {
     body = "shabaliscoo";
