@@ -16,6 +16,7 @@
 @import "modules/_testimonials.css";
 @import "modules/_site-footer.css";
 @import "modules/_site-header.css";
+@import "modules/_client-area.css";
 
 html {
   scroll-behavior: smooth;
