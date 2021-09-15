@@ -12,7 +12,7 @@ exports.handler = function (event, context, callback) {
     body = {};
   }
 
-  if (body.password == "shabaliscoo") {
+  if (body.password === "shabaliscoo") {
     callback(null, {
       statusCode: 200,
       body: secretContent,
