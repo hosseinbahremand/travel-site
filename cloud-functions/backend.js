@@ -6,7 +6,11 @@ exports.handler = function (event, context, callback) {
 
   let body;
 
-  body = JSON.parse(event.body);
+  if (event.body) {
+    body = JSON.parse(event.body);
+  } else {
+    body = {};
+  }
 
   if (body.password == "shabaliscoo") {
     callback(null, {
