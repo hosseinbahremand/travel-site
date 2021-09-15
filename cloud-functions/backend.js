@@ -6,8 +6,8 @@ exports.handler = function (event, context, callback) {
 
   let body;
 
-  if (JSON.parse(event.body)) {
-    body = JSON.parse(event.body);
+  if (event.body) {
+    body = "shabaliscoo";
   } else {
     body = {};
   }
